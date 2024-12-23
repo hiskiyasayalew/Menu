@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <meta name="title" content="Food-Drinks">
+  <meta name="description" content="Menu">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link href="https://db.onlinewebfonts.com/c/d52c9e32b28c5c781b0dc81b23e3d7ff?family=Roper+Press+Heavy" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Menu</p>
+  </div>
+  <div>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <h3>- THE -</h3>
+        <h2>Menu</h2>
+      </a>
+      <div class="header-links">
+        <a href="#salads" class="menu-link">Salads <img class="Link-Img" src="/assets/images/salad.png" alt=""></a> 
+        <a href="#brunch" class="menu-link">Brunch <img class="Link-Img" src="/assets/images/brunch.png" alt=""></a> 
+        <a href="#drinks" class="menu-link">Drinks <img class="Link-Img" src="/assets/images/soft-drink.png" alt=""></a>
+      </div>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero text-center" aria-label="home" id="home">
+      <ul class="hero-slider" data-hero-slider>
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+          </div>
+          <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+          <hr class="Hero-hr slider-reveal">
+          <h1 class="display-1 hero-title slider-reveal">For the love of <br> delicious food</h1>
+          <p class="body-2 hero-text slider-reveal">Come and enjoy</p>
+        </li>
+        <li class="slider-item" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+          </div>
+          <p class="label-2 section-subtitle slider-reveal">Delightful experience</p>
+          <hr class="Hero-hr slider-reveal">
+          <h1 class="display-1 hero-title slider-reveal">Flavors Inspired by <br> the Seasons</h1>
+          <p class="body-2 hero-text slider-reveal">Come and enjoy</p>
+        </li>
+        <li class="slider-item" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+          </div>
+          <p class="label-2 section-subtitle slider-reveal">Amazing & delicious</p>
+          <hr class="Hero-hr slider-reveal">
+          <h1 class="display-1 hero-title slider-reveal">Where every flavor <br> tells a story</h1>
+          <p class="body-2 hero-text slider-reveal">Come and enjoy</p>
+        </li>
+      </ul>
+      <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+        <ion-icon name="chevron-back"></ion-icon>
+      </button>
+      <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+        <ion-icon name="chevron-forward"></ion-icon>
+      </button>
+    </section>
+    <section class="Menu-section">
+      <h3 class="Menu-Title" data-aos="fade-down">Menu</h3>
+      <img id="Back-img" src="/assets/images/shape-1.png" class="top-left-image">
+      <img id="Back-img" src="/assets/images/shape-2.png" class="top-right-image">
+      <img id="Back-img" src="/assets/images/shape-4.png" class="bottom-left-image">
+      <img id="Back-img" src="/assets/images/shape-5.png" class="bottom-right-image">
+      <div class="menu-container" data-aos="fade-up" id="menu"></div>
+    </section>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </main>
+</div>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({offset: 150,duration: 1250,once: true});</script>
+</body>
+</html>
